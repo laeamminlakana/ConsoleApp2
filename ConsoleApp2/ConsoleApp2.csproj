@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="cheatsheets\Video1.cs" />
+    <Compile Remove="cheatsheets\Video2.cs" />
+    <Compile Remove="cheatsheets\Video3.cs" />
+    <Compile Remove="cheatsheets\Video4.cs" />
+    <Compile Remove="cheatsheets\Video5.cs" />
+    <Compile Remove="cheatsheets\Video6.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.12.0.5764" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Folder Include="bin\debug\net8.0\detection\" />
+    <Folder Remove="cheatsheets\" />
+	<Folder Remove="img\" />
+  </ItemGroup>
+
+</Project>
